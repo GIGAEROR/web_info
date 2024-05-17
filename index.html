@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIGA_ERROR : info</title>
+
+  <!---------- <Link> ---------->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <!---------- <Link> ---------->
+
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+
+  <span class="Audio">
+    <audio id="song" loop src="assets/music/Leak.mp3"></audio>
+    <button id="button" onclick="playPause()">
+      <img id="image" src="./assets/img/svg/off.svg">
+    </button>
+  </span>
+
+  <script>
+    var aud = document.getElementById("song");
+    var btn = document.getElementById("button");
+    var img = document.getElementById("image");
+    var isPlaying = false;
+    aud.pause();
+
+    function playPause() {
+      if (isPlaying) {
+        aud.pause();
+        img.src = "assets/img/svg/off.svg";
+      } else {
+        aud.play();
+        img.src = "assets/img/svg/on.svg";
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+  <main>
+
+    <div class="info">
+
+      <div class="profile">
+        <img class="profile" src="assets/img/asl.png" alt="">
+        <span>GIGA_ERORR</span>
+      </div>
+
+      <div class="Info__Btn">
+
+        <div class="social-icon Discord_Gt">
+          <i class="fab fa-discord Font_Size"></i>
+          <a href="https://discord.gg/PmrmwaUE" target="_blank" aria-label="Discord community">Discord</a>
+        </div>
+        
+
+        
+
+       
+        <div class="social-icon Telegram_Gt">
+          <img class="Medium_Size" src="assets/img/apps.55245.13537716651231321.3067a421-6c2f-48a9-b77c-1e38e19146e6.png" alt="My Instagram profile">
+          <a href="https://t.me/CodeLife0090" target="_blank"
+            aria-label="Follow me on Instagram">Telegram</a>
+        </div>
+
+        <div class="social-icon GitHub_Gt">
+          <img class="Medium_Size" src="./assets/img/svg/github-mark.svg" alt="My GitHub profile">
+          <a href="https://github.com/GIGAEROR" target="_blank" aria-label="Visit my GitHub profile">GitHub</a>
+        </div>
+    
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="Panel__For__Audio">
+
+    </div>
+
+    <div class="Info__Panel">
+    </div>
+
+
+
+    <div class="bg">
+      <img class="img_bg" src="assets/img/Screenshot (2439).png" alt="">
+    </div>
+
+  </main>
+
+</body>
+
+</html>
